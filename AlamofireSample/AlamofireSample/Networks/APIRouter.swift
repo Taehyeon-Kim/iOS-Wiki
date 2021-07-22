@@ -54,8 +54,10 @@ enum APIRouter: URLRequestConvertible {
     // MARK: - Encodings
     var encoding: ParameterEncoding {
         switch self {
-        default:
+        case .getTravels:
             return URLEncoding.default
+        default:
+            return JSONEncoding.default
         }
     }
     
