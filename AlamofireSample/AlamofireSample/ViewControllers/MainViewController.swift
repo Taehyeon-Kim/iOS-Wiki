@@ -27,6 +27,13 @@ class MainViewController: UIViewController {
         getSchedules(groupId: "60f1df0e47b392202ccdc0c7",
                      date: "2021-10-05")
     }
+    
+    // MARK: - Actions
+    @IBAction func pushAddTravelViewControllerTapped(_ sender: Any) {
+        guard let vc = UIStoryboard(name: "AddTravelStoryboard", bundle: nil)
+                .instantiateViewController(identifier: "AddTravelViewController") as? AddTravelViewController else { return }
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 // MARK: - Configure

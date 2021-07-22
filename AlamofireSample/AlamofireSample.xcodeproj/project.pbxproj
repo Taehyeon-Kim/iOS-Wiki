@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		09A206D96F014B20EFEF7346 /* Pods_AlamofireSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E457002618DDB810DA9537 /* Pods_AlamofireSample.framework */; };
+		BD63D7D126A9B81B0026A5A1 /* AddTravelStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD63D7D026A9B81B0026A5A1 /* AddTravelStoryboard.storyboard */; };
+		BD63D7D326A9B8330026A5A1 /* AddTravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD63D7D226A9B8330026A5A1 /* AddTravelViewController.swift */; };
+		BD63D7D526A9BD650026A5A1 /* AddTravelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD63D7D426A9BD650026A5A1 /* AddTravelResponse.swift */; };
 		BDE87C7326A9449600CFDF1A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE87C7226A9449600CFDF1A /* APIConstants.swift */; };
 		BDE87C7526A990BD00CFDF1A /* ScheduleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE87C7426A990BD00CFDF1A /* ScheduleResponse.swift */; };
 		BDE87C7926A9947500CFDF1A /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE87C7726A9947500CFDF1A /* ScheduleTableViewCell.swift */; };
@@ -27,6 +30,9 @@
 		58E457002618DDB810DA9537 /* Pods_AlamofireSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79EF10F8F2CA3E0E9B6011D5 /* Pods-AlamofireSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireSample.release.xcconfig"; path = "Target Support Files/Pods-AlamofireSample/Pods-AlamofireSample.release.xcconfig"; sourceTree = "<group>"; };
 		96F11A16F3AF0F061AB9A8AE /* Pods-AlamofireSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireSample.debug.xcconfig"; path = "Target Support Files/Pods-AlamofireSample/Pods-AlamofireSample.debug.xcconfig"; sourceTree = "<group>"; };
+		BD63D7D026A9B81B0026A5A1 /* AddTravelStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTravelStoryboard.storyboard; sourceTree = "<group>"; };
+		BD63D7D226A9B8330026A5A1 /* AddTravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTravelViewController.swift; sourceTree = "<group>"; };
+		BD63D7D426A9BD650026A5A1 /* AddTravelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTravelResponse.swift; sourceTree = "<group>"; };
 		BDE87C7226A9449600CFDF1A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		BDE87C7426A990BD00CFDF1A /* ScheduleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleResponse.swift; sourceTree = "<group>"; };
 		BDE87C7726A9947500CFDF1A /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
@@ -129,6 +135,7 @@
 			children = (
 				BDF41B9826A8776C00CD39BC /* LaunchScreen.storyboard */,
 				BDF41BB626A885F400CD39BC /* MainStoryboard.storyboard */,
+				BD63D7D026A9B81B0026A5A1 /* AddTravelStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -147,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				BDF41BAF26A8849F00CD39BC /* MainTravelResponse.swift */,
+				BD63D7D426A9BD650026A5A1 /* AddTravelResponse.swift */,
 				BDE87C7426A990BD00CFDF1A /* ScheduleResponse.swift */,
 			);
 			path = Models;
@@ -156,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				BDF41BB426A885E100CD39BC /* MainViewController.swift */,
+				BD63D7D226A9B8330026A5A1 /* AddTravelViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -219,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD63D7D126A9B81B0026A5A1 /* AddTravelStoryboard.storyboard in Resources */,
 				BDF41BB726A885F400CD39BC /* MainStoryboard.storyboard in Resources */,
 				BDF41B9A26A8776C00CD39BC /* LaunchScreen.storyboard in Resources */,
 				BDE87C7A26A9947500CFDF1A /* ScheduleTableViewCell.xib in Resources */,
@@ -279,10 +289,12 @@
 				BDE87C7326A9449600CFDF1A /* APIConstants.swift in Sources */,
 				BDF41B8E26A8776A00CD39BC /* AppDelegate.swift in Sources */,
 				BDF41BB026A8849F00CD39BC /* MainTravelResponse.swift in Sources */,
+				BD63D7D526A9BD650026A5A1 /* AddTravelResponse.swift in Sources */,
 				BDF41BA626A87B7800CD39BC /* APIRouter.swift in Sources */,
 				BDE87C7526A990BD00CFDF1A /* ScheduleResponse.swift in Sources */,
 				BDF41B9026A8776A00CD39BC /* SceneDelegate.swift in Sources */,
 				BDF41BB226A8854300CD39BC /* APIClient.swift in Sources */,
+				BD63D7D326A9B8330026A5A1 /* AddTravelViewController.swift in Sources */,
 				BDE87C7926A9947500CFDF1A /* ScheduleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
