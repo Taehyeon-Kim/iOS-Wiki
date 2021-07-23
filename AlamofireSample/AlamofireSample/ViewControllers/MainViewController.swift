@@ -56,8 +56,9 @@ extension MainViewController {
 extension MainViewController {
     // - Network
     private func getSchedules(groupId: String, date: String) {
-        APIClient.performRequest(ScheduleResponse.self,
-                                 router: APIRouter.getSchedules(groupId: groupId, date: date)) { [weak self] (models) in
+        APIClient.request(ScheduleResponse.self,
+                                 router: APIRouter.getSchedules(groupId: groupId,
+                                                                date: date)) { [weak self] (models) in
             self?.schedules = models.data?.schedules
         } failure: { error in
             print(error.localizedDescription)

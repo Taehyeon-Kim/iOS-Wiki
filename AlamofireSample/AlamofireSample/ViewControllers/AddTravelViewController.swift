@@ -49,7 +49,7 @@ extension AddTravelViewController {
     private func addTravel(travelName: String, destination: String,
                            startDate: String, endDate: String, imgIndex: Int) {
         
-        APIClient.performRequest(AddTravelResponse.self, router: APIRouter.addTravel(travelName: travelName,
+        APIClient.request(AddTravelResponse.self, router: APIRouter.addTravel(travelName: travelName,
                                                                                      destination: destination,
                                                                                      startDate: startDate,
                                                                                      endDate: endDate,
