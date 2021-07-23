@@ -59,10 +59,16 @@ extension MainViewController {
         APIClient.request(ScheduleResponse.self,
                                  router: APIRouter.getSchedules(groupId: groupId,
                                                                 date: date)) { [weak self] (models) in
-            self?.schedules = models.data?.schedules
+            self?.setScheduleResult(models)
         } failure: { error in
             print(error.localizedDescription)
         }
+    }
+    
+    // Schedule Data Setting을 함수로 분리
+    private func setScheduleResult(_ scheduleResult: ScheduleResponse) {
+        schedules = scheduleResult.data?.schedules
+        tableView.reloadData()
     }
 }
 
