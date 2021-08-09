@@ -10,4 +10,7 @@
 |5|`MVVMSample`|MVVM 맛보기|21.07.30|-|
 |6|`MVVMSample2`|MVVM 샘플2 |21.08.02|-|
 |7|`MVVMSample3+RxSwift`|MVVM 샘플3|21.08.03|-|
-|8|`Dependency Injection`|의존성 주입이란|21.08.04 ~|-|
+|8|`Dependency Injection`|의존성 주입이란|21.08.04 ~ 21.08.05|-|
+|9|`Indicator View`|인디케이터 뷰|21.08.06|-|
+|10|`Equatable Protocol`|Equatable 프로토콜|21.08.07|[🔖](https://github.com/Taehyeon-Kim/iOS-Wiki/tree/master/EquatableProtocol.playground)|
+|11|`Variadic Parameters`|가변인자|21.08.08|[🔖](https://github.com/Taehyeon-Kim/iOS-Wiki/blob/master/Variadic%2BParameter.md)|
