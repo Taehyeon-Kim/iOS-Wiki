@@ -15,3 +15,5 @@
 |10|`Equatable Protocol`|Equatable 프로토콜|21.08.07|[🔖](https://github.com/Taehyeon-Kim/iOS-Wiki/tree/master/EquatableProtocol.playground)|
 |11|`Variadic Parameters`|가변인자|21.08.08|[🔖](https://github.com/Taehyeon-Kim/iOS-Wiki/blob/master/Variadic%2BParameter.md)|
 |12|`Error Handling`|에러 핸들링(처리)|21.08.09|[🔖](https://github.com/Taehyeon-Kim/iOS-Wiki/tree/master/ErrorHandling)|
+|13|`Convenience initializer`|편의 이니셜라이저, 커스텀버튼 만들기|21.08.10|[🔖](https://github.com/Taehyeon-Kim/iOS-Wiki/blob/master/CustomViewSample/Convenience%2Binitializer.md)|
+
