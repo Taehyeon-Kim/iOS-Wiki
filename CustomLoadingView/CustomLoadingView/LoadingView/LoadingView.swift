@@ -19,8 +19,6 @@ class LoadingView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
-        initXIB()
     }
     
     func initXIB() {
@@ -28,14 +26,29 @@ class LoadingView: UIView {
             return
         }
         
+        view.backgroundColor = .blue
+        
+        print("LoadingView Bounds", self.bounds)
+        print("LoadingView Frame", self.frame)
+        
+        print("SubView Frame (전)", view.frame)
         view.frame = self.bounds
+        print("SubView Frame (후)", view.frame)
+        
+        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
         self.addSubview(view)
     }
     
     func startAnimation() {
         for index in 0..<dots.count {
             dots[index].transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
-            UIView.animate(withDuration: 0.6, delay: Double(index+1) * 0.2, options: [.repeat, .autoreverse], animations: { self.dots[index].transform = CGAffineTransform.identity }, completion: nil)
+            UIView.animate(withDuration: 0.6,
+                           delay: Double(index+1) * 0.2,
+                           options: [.repeat, .autoreverse],
+                           animations: {
+                            self.dots[index].transform = CGAffineTransform.identity
+                           }, completion: nil)
         }
     }
 }

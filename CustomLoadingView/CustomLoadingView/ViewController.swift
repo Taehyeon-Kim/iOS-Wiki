@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
     
     func setLoadingView() {
-        let loadingViewFrame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        let loadingViewFrame = CGRect(x: 0, y: 0, width: 300, height: 200)
         loadingView = LoadingView(frame: loadingViewFrame)
         guard let loading = loadingView else { return }
         
@@ -26,7 +26,5 @@ class ViewController: UIViewController {
         loading.startAnimation()
         self.view.addSubview(loading)
     }
-
-
 }
 
