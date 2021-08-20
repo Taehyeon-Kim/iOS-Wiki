@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let redView = UIView()
-    let greenView = UIView()
+    let grayView = UIView()
+    let orangeView = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,26 +18,28 @@ class ViewController: UIViewController {
     }
 
     private func setup() {
-        redView.frame = CGRect(x: 50, y: 50, width: 200, height: 200)
-        greenView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        grayView.backgroundColor = .gray
+        grayView.frame = CGRect(x: 50, y: 50, width: 200, height: 200)
+        view.addSubview(grayView)
+        
+        orangeView.backgroundColor = .orange
+        orangeView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        grayView.addSubview(orangeView)
         
         UIView.animate(withDuration: 2) {
-            self.redView.bounds = CGRect(x: -50, y: -50, width: self.redView.frame.width, height: self.redView.frame.height)
+            // code
+            // 주황색 박스를 회색 박스의 우측하단으로 보내는 코드를 작성하시오.
+            self.grayView.bounds.origin.x = -100
+            self.grayView.bounds.origin.y = -100
         }
         
-        redView.backgroundColor = .red
-        greenView.backgroundColor = .green
-        
-        view.addSubview(redView)
-        redView.addSubview(greenView)
-        
         print("========= Frame ==========")
-        print("redView frame: ", redView.frame.origin, redView.frame.size)
-        print("greenView frame: ", greenView.frame.origin, greenView.frame.size)
+        print("redView frame: ", grayView.frame.origin, grayView.frame.size)
+        print("greenView frame: ", orangeView.frame.origin, orangeView.frame.size)
         
         print("========= Bounds ==========")
-        print("redView bounds: ", redView.bounds.origin, redView.bounds.size)
-        print("greenView bounds: ", greenView.bounds.origin, greenView.bounds.size)
+        print("redView bounds: ", grayView.bounds.origin, grayView.bounds.size)
+        print("greenView bounds: ", orangeView.bounds.origin, orangeView.bounds.size)
     }
 }
 
