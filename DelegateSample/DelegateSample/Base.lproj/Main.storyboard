@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nW0-wr-7VS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DelegateSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivQ-gG-fUk">
+                                <rect key="frame" x="122" y="433" width="170" height="30"/>
+                                <state key="normal" title="Popup 관련 Delegate 예제"/>
+                                <connections>
+                                    <action selector="delegateExampleButton1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SR3-ye-rn3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ivQ-gG-fUk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U65-LE-Umn"/>
+                            <constraint firstItem="ivQ-gG-fUk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ePK-Id-9uP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dFb-Ne-1DT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--Delegate Example1 View Controller-->
+        <scene sceneID="iHH-5P-jJQ">
+            <objects>
+                <viewController storyboardIdentifier="DelegateExample1ViewController" id="y1K-8J-kO5" customClass="DelegateExample1ViewController" customModule="DelegateSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jSC-Lq-aIc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlZ-Zz-n8x">
+                                <rect key="frame" x="168" y="808" width="78" height="34"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="팝업띄우기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="openPopupTapped:" destination="y1K-8J-kO5" eventType="touchUpInside" id="SXe-UF-CYg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rqe-hh-VRh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PlZ-Zz-n8x" firstAttribute="centerX" secondItem="jSC-Lq-aIc" secondAttribute="centerX" id="Etl-GW-hPL"/>
+                            <constraint firstItem="Rqe-hh-VRh" firstAttribute="bottom" secondItem="PlZ-Zz-n8x" secondAttribute="bottom" constant="20" id="e54-NG-ZDi"/>
+                            <constraint firstItem="PlZ-Zz-n8x" firstAttribute="top" secondItem="jSC-Lq-aIc" secondAttribute="bottom" constant="-88" id="n2i-KR-7zD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GMC-SA-Ccy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839" y="139"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="oD7-o2-y0e">
+            <objects>
+                <viewController storyboardIdentifier="PopUpViewController" id="8KS-wc-i6c" customClass="PopUpViewController" customModule="DelegateSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a6E-7N-Adf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Kk-C9-pas">
+                                <rect key="frame" x="82" y="328" width="250" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="델리게이트 패턴을 테스트해보기 위한 팝업입니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkM-sy-ZWd">
+                                        <rect key="frame" x="10" y="60" width="230" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="cRw-Si-qcf">
+                                        <rect key="frame" x="20" y="133" width="210" height="87"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfi-Wj-Nt2">
+                                                <rect key="frame" x="0.0" y="0.0" width="210" height="34"/>
+                                                <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <state key="normal" title="유튜브 바로가기">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="goYoutubeButtonTapped:" destination="8KS-wc-i6c" eventType="touchUpInside" id="MDb-2O-1nW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IY2-hJ-0zg">
+                                                <rect key="frame" x="0.0" y="53" width="210" height="34"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <state key="normal" title="나가기">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="quitButtonTapped:" destination="8KS-wc-i6c" eventType="touchUpInside" id="X4i-LU-cQd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="LQl-mk-x2I"/>
+                                    <constraint firstItem="NkM-sy-ZWd" firstAttribute="top" secondItem="8Kk-C9-pas" secondAttribute="top" constant="60" id="Qe4-Cf-yp0"/>
+                                    <constraint firstAttribute="trailing" secondItem="cRw-Si-qcf" secondAttribute="trailing" constant="20" id="ZAm-gc-Qmc"/>
+                                    <constraint firstAttribute="bottom" secondItem="cRw-Si-qcf" secondAttribute="bottom" constant="20" id="cwZ-W5-wIV"/>
+                                    <constraint firstItem="cRw-Si-qcf" firstAttribute="leading" secondItem="8Kk-C9-pas" secondAttribute="leading" constant="20" id="d1t-Su-zeY"/>
+                                    <constraint firstItem="NkM-sy-ZWd" firstAttribute="centerX" secondItem="8Kk-C9-pas" secondAttribute="centerX" id="ik8-s2-yIH"/>
+                                    <constraint firstAttribute="trailing" secondItem="NkM-sy-ZWd" secondAttribute="trailing" constant="10" id="k0e-ZE-utA"/>
+                                    <constraint firstAttribute="width" constant="250" id="mYr-iZ-hDf"/>
+                                    <constraint firstItem="NkM-sy-ZWd" firstAttribute="leading" secondItem="8Kk-C9-pas" secondAttribute="leading" constant="10" id="ntP-uR-dVV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VpB-DO-Xiz"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Kk-C9-pas" firstAttribute="centerX" secondItem="a6E-7N-Adf" secondAttribute="centerX" id="bLJ-E4-QA9"/>
+                            <constraint firstItem="8Kk-C9-pas" firstAttribute="centerY" secondItem="a6E-7N-Adf" secondAttribute="centerY" id="qG9-xS-5JH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W1j-AU-36c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2635" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IqX-9r-CPp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nW0-wr-7VS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eMo-HJ-k0A">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="e9g-PG-Wxj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rbZ-Br-ZcH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
