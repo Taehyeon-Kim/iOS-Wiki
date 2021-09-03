@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DelegateSample2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fIK-HJ-GhQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="YoutubeTableViewCell" rowHeight="107" id="VR9-fa-wLJ" customClass="YoutubeTableViewCell" customModule="DelegateSample2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="107"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VR9-fa-wLJ" id="CgY-wK-ODw">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nE0-v2-IeP">
+                                                    <rect key="frame" x="20" y="20" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBp-Nd-cAm">
+                                                    <rect key="frame" x="325" y="57" width="69" height="30"/>
+                                                    <state key="normal" title="Subscribe"/>
+                                                    <connections>
+                                                        <action selector="subscribeButtonTapped:" destination="VR9-fa-wLJ" eventType="touchUpInside" id="2Zz-5s-n5t"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gBp-Nd-cAm" firstAttribute="top" secondItem="CgY-wK-ODw" secondAttribute="top" constant="57" id="3yp-Yt-gmM"/>
+                                                <constraint firstItem="nE0-v2-IeP" firstAttribute="leading" secondItem="CgY-wK-ODw" secondAttribute="leading" constant="20" id="E3a-TO-9JN"/>
+                                                <constraint firstAttribute="trailing" secondItem="gBp-Nd-cAm" secondAttribute="trailing" constant="20" id="GTp-To-lV1"/>
+                                                <constraint firstAttribute="bottom" secondItem="gBp-Nd-cAm" secondAttribute="bottom" constant="20" id="Mfy-GC-hjS"/>
+                                                <constraint firstItem="gBp-Nd-cAm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CgY-wK-ODw" secondAttribute="leading" constant="20" symbolic="YES" id="gTI-MJ-IWe"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nE0-v2-IeP" secondAttribute="trailing" constant="20" symbolic="YES" id="lqt-l7-C8x"/>
+                                                <constraint firstItem="nE0-v2-IeP" firstAttribute="top" secondItem="CgY-wK-ODw" secondAttribute="top" constant="20" id="rQ5-oY-X3a"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="subscribeButton" destination="gBp-Nd-cAm" id="5Yq-Xr-gIi"/>
+                                            <outlet property="youtuberLabel" destination="nE0-v2-IeP" id="DDM-jT-LfQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fIK-HJ-GhQ" secondAttribute="trailing" id="1ke-6u-Xb2"/>
+                            <constraint firstItem="fIK-HJ-GhQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Oz-sR-gAx"/>
+                            <constraint firstItem="fIK-HJ-GhQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gTT-Ma-K76"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fIK-HJ-GhQ" secondAttribute="bottom" id="wgd-8M-cG2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="fIK-HJ-GhQ" id="CPh-IF-CJh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
