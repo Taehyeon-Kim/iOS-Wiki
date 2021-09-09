@@ -17,3 +17,9 @@
 |12|`Error Handling`|에러 핸들링(처리)|21.08.09|[🔖](https://github.com/Taehyeon-Kim/iOS-Wiki/tree/master/ErrorHandling)|
 |13|`Convenience initializer`|편의 이니셜라이저, 커스텀버튼 만들기|21.08.10|[🔖](https://github.com/Taehyeon-Kim/iOS-Wiki/blob/master/CustomViewSample/Convenience%2Binitializer.md)|
 |14|`Custom (Loading) View`|커스텀 뷰, 커스텀 로딩뷰|21.08.11 ~ 21.08.12|[🔖](https://github.com/Taehyeon-Kim/iOS-Wiki/blob/master/CustomLoadingView/CustomLoadingView.md)|
+|15|`CollectionView Dynamic Sizing Cell`|컬렉션뷰 셀 동적 높이|21.08.13|-|
+|16|`Optional`|옵셔널|21.08.18|-|
+|17|`frame vs bounds`|프레임과 바운드|21.08.19 ~ 21.08.20|-|
+|18|`Preview`|UIKit에서 Preview 기능 사용하기|21.08.21|-|
+|19|`Delegate Sample 1`|화면전환+데이터전달에 Delegate 이용하기|21.08.30|-|
+|20|`Delegate Sample 2`|셀 안의 버튼 이벤트에 Delegate 이용하기|21.09.03|-|
