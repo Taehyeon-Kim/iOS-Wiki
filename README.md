@@ -24,3 +24,4 @@
 |19|`Delegate Sample 1`|화면전환+데이터전달에 Delegate 이용하기|21.08.30|-|
 |20|`Delegate Sample 2`|셀 안의 버튼 이벤트에 Delegate 이용하기|21.09.03|-|
 |20|`Delegate Sample 3`|이전 화면으로 데이터 전달하기에 Delegate 이용하기|21.09.09|-|
+|21|`TableView Delete Function`|섹션이 여러 개 일 때, 삭제 기능 사용하기|21.09.19|-|
