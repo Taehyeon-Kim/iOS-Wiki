@@ -26,4 +26,4 @@
 |20|`Delegate Sample 3`|이전 화면으로 데이터 전달하기에 Delegate 이용하기|21.09.09|-|
 |21|`TableView Delete Function`|섹션이 여러 개 일 때, 삭제 기능 사용하기|21.09.19|-|
 |22|`Self vs self`|Self와 self의 느낌 비교하기|21.09.20|-|
-|21|`setNeedsLayout vs layoutIfNeeded`|UIView layout update methods|21.09.21|-|
+|23|`setNeedsLayout vs layoutIfNeeded`|UIView layout update methods|21.09.21|-|
